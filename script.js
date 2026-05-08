@@ -17,6 +17,7 @@
     extLink: `<svg class="ext" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>`,
     graduation: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1 2.5 3 6 3s6-2 6-3v-5"/><path d="M22 9v5"/></svg>`,
     graduationSimple: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v5c0 1 2.5 3 6 3s6-2 6-3v-5"/></svg>`,
+    lock: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
   };
 
   // ── Helpers ────────────────────────────────────────────────────────
@@ -70,8 +71,7 @@
 
   // ── Nav ────────────────────────────────────────────────────────────
   document.getElementById('nav-logo').innerHTML =
-    `<span class="logo-mark">${esc(meta.initial)}</span>
-     <span>${esc(meta.domain)}<span style="color:var(--muted-2)">${esc(meta.domainTld)}</span></span>`;
+    `<span>${esc(meta.domain)}<span style="color:var(--muted-2)">${esc(meta.domainTld)}</span></span>`;
 
   const NAV_SECTIONS = [
     { id: 'about',      label: 'About'        },
@@ -210,19 +210,34 @@
     secHeader(projects.eyebrow, projects.title, projects.lede);
 
   document.getElementById('proj-grid').innerHTML =
-    projects.items.map((proj, i) => `
-      <a class="proj mouse-track" href="${esc(proj.url)}" target="_blank" rel="noopener">
+    projects.items.map((proj, i) => {
+      const isPrivate = !!proj.private;
+      const tag   = isPrivate ? 'div' : 'a';
+      const attrs = isPrivate
+        ? `class="proj mouse-track proj-private"`
+        : `class="proj mouse-track" href="${esc(proj.url)}" target="_blank" rel="noopener"`;
+
+      const titleSuffix = isPrivate
+        ? `<span class="proj-lock">${ICONS.lock} Enterprise</span>`
+        : ICONS.extLink;
+
+      return `
+      <${tag} ${attrs}>
         <div class="proj-media">
           <div class="stripes"></div>
           <div class="glow"></div>
-          <div class="proj-mock">
-            <div class="proj-mock-bar"><i></i><i></i><i></i></div>
-            <div class="proj-mock-body">${MOCK_LAYOUTS[i % MOCK_LAYOUTS.length]}</div>
-          </div>
+          ${proj.image
+            ? `<img class="proj-img" src="${esc(proj.image)}" alt="${esc(proj.title)}" loading="lazy">`
+            : `<div class="proj-mock">
+                <div class="proj-mock-bar"><i></i><i></i><i></i></div>
+                <div class="proj-mock-body">${MOCK_LAYOUTS[i % MOCK_LAYOUTS.length]}</div>
+               </div>`
+          }
+          ${isPrivate ? `<div class="proj-private-overlay"><span class="proj-private-badge">${ICONS.lock} Private · NDA</span></div>` : ''}
         </div>
         <div class="proj-body">
           <div class="proj-kicker">${esc(proj.kicker)}</div>
-          <h3 class="proj-title">${esc(proj.title)} ${ICONS.extLink}</h3>
+          <h3 class="proj-title">${esc(proj.title)} ${titleSuffix}</h3>
           <p class="proj-desc">${esc(proj.desc)}</p>
           <div class="proj-tags">${tags(proj.tags)}</div>
           <div class="proj-extra">
@@ -231,7 +246,8 @@
             </div>
           </div>
         </div>
-      </a>`).join('');
+      </${tag}>`;
+    }).join('');
 
   // ── Contact ────────────────────────────────────────────────────────
   document.getElementById('contact-header').innerHTML =

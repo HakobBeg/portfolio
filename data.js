@@ -6,7 +6,7 @@ window.PORTFOLIO_DATA = {
   meta: {
     name:         "Hakob",
     initial:      "H",
-    domain:       "hakobbeg",
+    domain:       "hakobbeglaryan",
     domainTld:    ".dev",
     pageTitle:    "Hakob — Senior Angular Developer",
     email:        "hakobbeg@gmail.com",
