@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hakob — Senior Angular Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb a"></div>
+    <div class="orb b"></div>
+    <div class="orb c"></div>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#top" id="nav-logo"></a>
+      <div class="nav-links" id="nav-links"></div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-links" id="mobile-nav-links"></div>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-content" id="hero-content"></div>
+          <div class="code-card-wrap reveal" style="transition-delay:240ms" id="code-card-wrap"></div>
+        </div>
+      </div>
+      <div class="scroll-ind" aria-hidden="true">
+        <span>scroll</span>
+        <span class="scroll-line"></span>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="wrap">
+        <div class="reveal" id="about-header"></div>
+        <div class="about-grid" id="about-grid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="reveal" id="skills-header"></div>
+        <div class="skills-grid stagger reveal" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="reveal" id="experience-header"></div>
+        <ol class="timeline reveal stagger" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="wrap">
+        <div class="reveal" id="education-header"></div>
+        <div class="edu-grid reveal stagger" id="edu-grid"></div>
+      </div>
+    </section>
+
+    <!-- Work / Projects -->
+    <section id="work">
+      <div class="wrap">
+        <div class="reveal" id="work-header"></div>
+        <div class="proj-grid reveal stagger" id="proj-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="reveal" id="contact-header"></div>
+        <div class="contact-card reveal" id="contact-card"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner" id="foot-inner"></div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
