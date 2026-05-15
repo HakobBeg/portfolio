@@ -139,11 +139,11 @@
     </div>`;
 
   // ── About ──────────────────────────────────────────────────────────
+  document.getElementById('about-eyebrow').innerHTML =
+    `<span class="sec-eyebrow">${about.eyebrow}</span>`;
+
   document.getElementById('about-left').innerHTML = `
-    <div class="reveal">
-      <span class="sec-eyebrow">${about.eyebrow}</span>
-      <h2 class="sec-title">${about.title}</h2>
-    </div>
+    <h2 class="sec-title reveal">${about.title}</h2>
     <div class="about-copy reveal">
       ${about.paragraphs.map(p => `<p>${p}</p>`).join('')}
     </div>`;

@@ -504,6 +504,8 @@ section {
 .sec-lede { color: var(--muted); margin-top: 16px; max-width: 640px; font-size: 17px; }
 
 /* ===== About ===== */
+#about-eyebrow { margin-bottom: 32px; }
+
 .about-layout {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 48px;
@@ -512,7 +514,7 @@ section {
 .about-left {
   display: flex; flex-direction: column; gap: 40px;
 }
-.about-left .sec-title { margin-top: 8px; }
+.about-left .sec-title { margin: 0; }
 .about-copy p { color: var(--muted); font-size: 17px; margin: 0 0 18px; }
 .about-copy strong { color: var(--text); font-weight: 500; }
 
