@@ -504,11 +504,15 @@ section {
 .sec-lede { color: var(--muted); margin-top: 16px; max-width: 640px; font-size: 17px; }
 
 /* ===== About ===== */
-.about-grid {
+.about-layout {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 48px; margin-top: 56px;
+  gap: 48px;
   align-items: stretch;
 }
+.about-left {
+  display: flex; flex-direction: column; gap: 40px;
+}
+.about-left .sec-title { margin-top: 8px; }
 .about-copy p { color: var(--muted); font-size: 17px; margin: 0 0 18px; }
 .about-copy strong { color: var(--text); font-weight: 500; }
 
@@ -925,7 +929,7 @@ footer.foot {
 }
 
 @media (max-width: 880px) {
-  .about-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-layout { grid-template-columns: 1fr; gap: 24px; }
   .about-portrait { height: 220px; min-height: unset; }
   .about-portrait-img { object-position: top center; }
   .about-stats { grid-template-columns: 1fr 1fr; margin-top: 24px; }
@@ -957,7 +961,8 @@ footer.foot {
   .sec-lede { font-size: 15px; }
   .sec-eyebrow { font-size: 11px; letter-spacing: 0.12em; }
 
-  .about-grid { margin-top: 36px; gap: 32px; }
+  .about-layout { gap: 24px; }
+  .about-left { gap: 24px; }
   .about-copy p { font-size: 16px; }
   .stat { padding: 22px; }
   .stat-num { font-size: 34px; }

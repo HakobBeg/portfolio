@@ -139,19 +139,20 @@
     </div>`;
 
   // ── About ──────────────────────────────────────────────────────────
-  document.getElementById('about-header').innerHTML =
-    `<span class="sec-eyebrow">${about.eyebrow}</span>
-     <h2 class="sec-title">${about.title}</h2>`;
-
-  document.getElementById('about-grid').innerHTML = `
+  document.getElementById('about-left').innerHTML = `
+    <div class="reveal">
+      <span class="sec-eyebrow">${about.eyebrow}</span>
+      <h2 class="sec-title">${about.title}</h2>
+    </div>
     <div class="about-copy reveal">
       ${about.paragraphs.map(p => `<p>${p}</p>`).join('')}
-    </div>
-    ${about.portrait ? `
-    <div class="about-portrait reveal">
+    </div>`;
+
+  if (about.portrait) {
+    document.getElementById('about-portrait-slot').innerHTML = `
       <img src="${esc(about.portrait)}" alt="Hakob" class="about-portrait-img">
-      <div class="about-portrait-overlay"></div>
-    </div>` : ''}`;
+      <div class="about-portrait-overlay"></div>`;
+  }
 
   document.getElementById('about-stats').innerHTML =
     about.stats.map(s => `
