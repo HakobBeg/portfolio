@@ -147,20 +147,18 @@
     <div class="about-copy reveal">
       ${about.paragraphs.map(p => `<p>${p}</p>`).join('')}
     </div>
-    <div class="about-right">
-      ${about.portrait ? `
-      <div class="about-portrait reveal">
-        <img src="${esc(about.portrait)}" alt="Hakob" class="about-portrait-img">
-        <div class="about-portrait-overlay"></div>
-      </div>` : ''}
-      <div class="stats reveal stagger">
-        ${about.stats.map(s => `
-          <div class="stat">
-            <div class="stat-num">${esc(s.value)}</div>
-            <div class="stat-lbl">${esc(s.label)}</div>
-          </div>`).join('')}
-      </div>
-    </div>`;
+    ${about.portrait ? `
+    <div class="about-portrait reveal">
+      <img src="${esc(about.portrait)}" alt="Hakob" class="about-portrait-img">
+      <div class="about-portrait-overlay"></div>
+    </div>` : ''}`;
+
+  document.getElementById('about-stats').innerHTML =
+    about.stats.map(s => `
+      <div class="stat">
+        <div class="stat-num">${esc(s.value)}</div>
+        <div class="stat-lbl">${esc(s.label)}</div>
+      </div>`).join('');
 
   // ── Skills ─────────────────────────────────────────────────────────
   document.getElementById('skills-header').innerHTML =
