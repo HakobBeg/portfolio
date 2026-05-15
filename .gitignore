@@ -1,1 +1,5 @@
-
+extracted/
+*.zip
+.claude/
+.idea/
+.DS_Store
