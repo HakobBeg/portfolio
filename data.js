@@ -52,6 +52,7 @@ window.PORTFOLIO_DATA = {
   about: {
     eyebrow: "01 — About",
     title:   "Calm, precise software engineering with an eye for craft.",
+    portrait: "assets/portrait.jpg",
     paragraphs: [
       "I specialize in building <strong>large Angular applications</strong> — the kind with hundreds of components, complex state graphs, and demanding performance budgets. My happy place is the intersection of architecture, type-safety, and motion design.",
       "Over the last seven years I've led microfrontend rollouts at fintech and SaaS companies, designed shared component libraries used by 50+ engineers, and tuned RxJS pipelines that stream live data to thousands of concurrent users.",
