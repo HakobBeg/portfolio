@@ -165,15 +165,6 @@ window.PORTFOLIO_DATA = {
         tags:   ["Angular 21", "NgRx", "RxJS", "Nx", "jsPlumb", "Transloco", "Monaco Editor", "Lottie"],
         extra:  [{ label: "Role", value: "Senior Software Engineer" }, { label: "Company", value: "T-Bank" }, { label: "Year", value: "2024" }],
       },
-      {
-        kicker: "E-Commerce · Full-stack",
-        title:  "Hilite",
-        desc:   "Multi-channel B2C + B2B e-commerce platform for a lighting brand. Built a full discount & promo engine (percentage, flat-rate, scheduled, scoped), fixed a critical timezone-mismatch pricing bug across Laravel/MySQL, and optimised the B2B API layer with request deduplication and in-memory caching.",
-        url:    "https://jurupalighting.com/",
-        image:  "assets/proj-hilite.png",
-        tags:   ["Laravel", "PHP", "React", "Next.js", "TypeScript", "MySQL", "REST API", "Vite"],
-        extra:  [{ label: "Role", value: "Full-stack" }, { label: "Channels", value: "B2C + B2B" }, { label: "Year", value: "2026" }],
-      },
     ],
   },
 
