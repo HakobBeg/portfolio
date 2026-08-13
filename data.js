@@ -147,6 +147,15 @@ window.PORTFOLIO_DATA = {
     lede:    "Selected from recent work. Hover to peek under the hood.",
     items: [
       {
+        kicker: "Fintech / Full-stack SaaS",
+        title:  "DetoxMyDebt",
+        desc:   "Debt payoff planning and AI financial coaching platform that turns debts, income, recurring costs, and recorded spending into practical repayment roadmaps. Built responsive web and Telegram experiences with avalanche, snowball, and custom plans, cash-flow forecasting, review-first imports, multilingual support, and subscription access.",
+        url:    "https://detoxmydebt.com",
+        image:  "assets/proj-detoxmydebt.png",
+        tags:   ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Gemini AI", "Telegram"],
+        extra:  [{ label: "Role", value: "Full-stack" }, { label: "Platform", value: "Web / Telegram" }, { label: "Year", value: "2026" }],
+      },
+      {
         kicker: "Real estate · Full-stack Platform",
         title:  "AAREA",
         desc:   "Full-stack multilingual real estate platform (hy / en / ru) covering listings, auctions, CMS, member directory, news, courses, and bookings. Angular frontend backed by a NestJS REST API with JWT auth, role-based access control, Prisma ORM, and PostgreSQL.",
