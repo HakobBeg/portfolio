@@ -145,7 +145,7 @@ window.PORTFOLIO_DATA = {
   projects: {
     eyebrow: "05 — Featured work",
     title:   "Products, platforms & the workflows behind them.",
-    lede:    "From building communities and real estate operations to fintech and enterprise tools. Explore the scope, stack, and stage of each project.",
+    lede:    "Selected work across property management, real estate, publishing, fintech, and enterprise software. Explore the scope, stack, and stage of each project.",
     items: [
       {
         kicker: "Property management · Full-stack platform",
@@ -157,6 +157,18 @@ window.PORTFOLIO_DATA = {
         badge:  "Demo",
         tags:   ["React", "TypeScript", "NestJS", "PostgreSQL", "Drizzle", "Telegram", "i18n"],
         extra:  [{ label: "Role", value: "Full-stack" }, { label: "Languages", value: "hy / en / ru" }, { label: "Stage", value: "Demo" }],
+      },
+      {
+        kicker: "Publishing · Ghost theme customization",
+        title:  "Revista Cuvântul",
+        desc:   "Customized the Mood Ghost theme for a Romanian opinion and culture publication. Delivered responsive homepage, article, tag, and author layouts, publication branding and typography, password access, and a public legal notice. Added automated theme builds, Ghost compatibility checks, and release deployments to AWS Lightsail.",
+        url:    "https://revistacuvantul.ro",
+        image:  "assets/proj-revista-cuvantul.png",
+        imageAlt: "Revista Cuvântul public landing page with its branded masthead and publication introduction",
+        badge:  "Password-protected",
+        badgePosition: "bottom",
+        tags:   ["Ghost", "Handlebars", "JavaScript", "Tailwind CSS", "Gulp", "Nginx", "GitHub Actions", "AWS Lightsail"],
+        extra:  [{ label: "Role", value: "Theme customization & deployment" }, { label: "Base", value: "Mood" }, { label: "Year", value: "2026" }],
       },
       {
         kicker: "Real estate · Operations & integrations",

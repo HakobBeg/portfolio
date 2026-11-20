@@ -241,7 +241,7 @@
                 <div class="proj-mock-body">${MOCK_LAYOUTS[i % MOCK_LAYOUTS.length]}</div>
                </div>`
           }
-          ${badge ? `<div class="proj-status"><span class="proj-status-badge">${isPrivate ? ICONS.lock : ''}${esc(badge)}</span></div>` : ''}
+          ${badge ? `<div class="proj-status${proj.badgePosition === 'bottom' ? ' proj-status-bottom' : ''}"><span class="proj-status-badge">${isPrivate ? ICONS.lock : ''}${esc(badge)}</span></div>` : ''}
         </div>
         <div class="proj-body">
           <div class="proj-kicker">${esc(proj.kicker)}</div>

@@ -789,6 +789,7 @@ section {
   pointer-events: none;
   z-index: 2;
 }
+.proj-status-bottom { align-items: flex-end; }
 .proj-status-badge {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 5px 10px;
