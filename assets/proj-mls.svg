@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">MLS Armenia — property, people, matching</title>
+  <desc id="desc">An abstract illustration connecting property and people around a shared matching network.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A2C"/>
+      <stop offset="1" stop-color="#0B1120"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(606 241) rotate(90) scale(275)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EF6B4B" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#EF6B4B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="514" y1="172" x2="674" y2="316" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FB9A78"/>
+      <stop offset="1" stop-color="#E55A45"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#91A5C2" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+  <path fill="url(#background)" d="M0 0h800v500H0z"/>
+  <path fill="url(#grid)" d="M0 0h800v500H0z"/>
+  <path fill="url(#glow)" d="M0 0h800v500H0z"/>
+  <path d="M56 61H90" stroke="#F08767" stroke-width="4" stroke-linecap="round"/>
+  <text x="56" y="194" fill="#F8FAFC" font-family="Inter,Arial,sans-serif" font-size="104" font-weight="700" letter-spacing="-6">MLS</text>
+  <text x="61" y="232" fill="#F29A7E" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="600" letter-spacing="6">ARMENIA</text>
+  <text x="60" y="296" fill="#BAC8DC" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="400">Real estate operations</text>
+  <g stroke="#F28B6C" stroke-opacity=".13">
+    <circle cx="598" cy="238" r="143"/>
+    <circle cx="598" cy="238" r="103" stroke-dasharray="3 11"/>
+  </g>
+  <g stroke="#E8896D" stroke-opacity=".6" stroke-width="2">
+    <path d="M542 157L579 211M680 230L626 236M555 340L583 265"/>
+  </g>
+  <circle cx="598" cy="238" r="47" fill="url(#accent)"/>
+  <g stroke="#331F22" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M577 233L598 216L619 233M583 229V256H613V229M594 256V242H602V256"/>
+  </g>
+  <g fill="#131F32" stroke="#B5C6DF" stroke-opacity=".2" stroke-width="1.5">
+    <rect x="493" y="99" width="82" height="82" rx="24"/>
+    <rect x="663" y="195" width="82" height="82" rx="24"/>
+    <rect x="505" y="315" width="82" height="82" rx="24"/>
+  </g>
+  <g stroke="#C9D6E8" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M518 157V125H550V157M527 157V146H541V157M527 133H531M539 133H543M527 140H531M539 140H543"/>
+    <circle cx="704" cy="224" r="9"/>
+    <path d="M686 254V250C686 240 694 237 704 237C714 237 722 240 722 250V254"/>
+    <circle cx="540" cy="344" r="7"/>
+    <path d="M525 368V365C525 356 531 354 540 354C549 354 555 356 555 365V368M556 338C566 338 567 351 558 353M564 359C569 360 571 364 571 369"/>
+  </g>
+  <circle cx="598" cy="95" r="4" fill="#F29A7E"/>
+  <circle cx="455" cy="238" r="3" fill="#8BA0BA" fill-opacity=".6"/>
+  <circle cx="697" cy="341" r="4" fill="#F29A7E" fill-opacity=".6"/>
+  <path d="M60 423H740" stroke="#A9BCD5" stroke-opacity=".12"/>
+  <text x="60" y="461" fill="#8FA4BF" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="500" letter-spacing=".6">Property · People · Matching</text>
+</svg>

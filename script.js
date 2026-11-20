@@ -218,14 +218,16 @@
   document.getElementById('proj-grid').innerHTML =
     projects.items.map((proj, i) => {
       const isPrivate = !!proj.private;
-      const tag   = isPrivate ? 'div' : 'a';
-      const attrs = isPrivate
-        ? `class="proj mouse-track proj-private"`
-        : `class="proj mouse-track" href="${esc(proj.url)}" target="_blank" rel="noopener"`;
+      const hasLink = !!proj.url && !isPrivate;
+      const tag   = hasLink ? 'a' : 'article';
+      const attrs = hasLink
+        ? `class="proj mouse-track" href="${esc(proj.url)}" target="_blank" rel="noopener"`
+        : `class="proj mouse-track proj-static${isPrivate ? ' proj-private' : ''}"`;
 
       const titleSuffix = isPrivate
         ? `<span class="proj-lock">${ICONS.lock} Enterprise</span>`
-        : ICONS.extLink;
+        : hasLink ? ICONS.extLink : '';
+      const badge = proj.badge || (isPrivate ? 'Private · NDA' : '');
 
       return `
       <${tag} ${attrs}>
@@ -233,13 +235,13 @@
           <div class="stripes"></div>
           <div class="glow"></div>
           ${proj.image
-            ? `<img class="proj-img" src="${esc(proj.image)}" alt="${esc(proj.title)}" loading="lazy">`
+            ? `<img class="proj-img" src="${esc(proj.image)}" alt="${esc(proj.imageAlt || proj.title)}" loading="lazy">`
             : `<div class="proj-mock">
                 <div class="proj-mock-bar"><i></i><i></i><i></i></div>
                 <div class="proj-mock-body">${MOCK_LAYOUTS[i % MOCK_LAYOUTS.length]}</div>
                </div>`
           }
-          ${isPrivate ? `<div class="proj-private-overlay"><span class="proj-private-badge">${ICONS.lock} Private · NDA</span></div>` : ''}
+          ${badge ? `<div class="proj-status"><span class="proj-status-badge">${isPrivate ? ICONS.lock : ''}${esc(badge)}</span></div>` : ''}
         </div>
         <div class="proj-body">
           <div class="proj-kicker">${esc(proj.kicker)}</div>

@@ -23,7 +23,7 @@ window.PORTFOLIO_DATA = {
   hero: {
     titleGrad: "Senior frontend engineer",
     titleRest: "building scalable, enterprise-grade&nbsp;web&nbsp;platforms.",
-    intro: "Hi, I'm <strong>Hakob</strong> — a senior frontend engineer with 7+ years building large-scale Angular platforms at companies like <strong>T-Bank</strong> and <strong>Warner Music Group</strong>, shipping products that serve millions of users.",
+    intro: "Hi, I'm <strong>Hakob</strong> — a senior frontend engineer with 7+ years building Angular platforms at <strong>T-Bank</strong> and <strong>Warner Music Group</strong>. My work also spans full-stack products like <strong>BnakHub</strong>, backend integrations for <strong>MLS</strong>, and real estate CRM solution design.",
     highlights: [
       { value: "7+ yrs",       label: "Angular"             },
       { value: "12M+",         label: "users served"        },
@@ -56,6 +56,7 @@ window.PORTFOLIO_DATA = {
     paragraphs: [
       "I specialize in <strong>large-scale Angular architecture</strong> — platforms with hundreds of components, complex real-time state, and demanding performance budgets shared across dozens of engineering teams. My strength sits at the intersection of architecture, type-safety, and developer experience.",
       "At <strong>T-Bank</strong> and <strong>Warner Music Group</strong> I've led microfrontend rollouts, designed component libraries adopted by 50+ engineers, and tuned RxJS pipelines delivering live data to millions of concurrent users — while maintaining 99.9% uptime.",
+      "I also work across the full product stack. <strong>BnakHub</strong> connects building managers and residents through multilingual web and Telegram experiences. On <strong>MLS</strong>, I extend real estate operations with property matching, CRM integrations, and automated notifications. My <strong>Bitrix24 CRM</strong> work covers discovery and solution design, translating sales processes into workflows, data models, and a phased implementation plan.",
       "Beyond the code, I care deeply about <strong>craft</strong> — interfaces that feel obvious because every detail was deliberate, and motion you only notice when it's missing.",
     ],
     stats: [
@@ -82,11 +83,11 @@ window.PORTFOLIO_DATA = {
       { name: "Transloco",      category: "i18n",         level: 86, desc: "Lazy-loaded translations, scoped loaders, multi-language support across enterprise apps." },
       { name: "Lottie",         category: "Animation",    level: 80, desc: "JSON-driven animations integrated into Angular components for rich UI motion." },
       { name: "CI / CD",        category: "DevOps",       level: 85, desc: "GitHub Actions, GitLab CI, Jenkins — preview environments and automated pipelines."       },
-      { name: "NestJS",         category: "Backend",      level: 82, desc: "REST & GraphQL APIs, dependency injection, queue-driven workers."                        },
+      { name: "NestJS",         category: "Backend",      level: 82, desc: "Role-scoped APIs, authentication, and product workflows for BnakHub and AAREA."             },
       { name: "JavaScript",     category: "Language",     level: 95, desc: "Modern ES, async patterns, performance-aware authoring, deep platform fluency."           },
       { name: "Docker",         category: "Tooling",      level: 80, desc: "Multi-stage builds, slim images, local dev parity with production."                       },
-      { name: "PostgreSQL",     category: "Database",     level: 78, desc: "Schema design, indexing, query plans, pgBouncer, read-replica routing."                   },
-      { name: "React",          category: "Framework",    level: 82, desc: "Hooks, Suspense, server components, and shipping production apps with Next.js."            },
+      { name: "PostgreSQL",     category: "Database",     level: 78, desc: "Relational data modeling, migrations, and application data access with Drizzle and Prisma." },
+      { name: "React",          category: "Framework",    level: 82, desc: "TypeScript interfaces with Vite, multilingual dashboards, and Telegram Mini App experiences." },
     ],
   },
 
@@ -143,9 +144,42 @@ window.PORTFOLIO_DATA = {
 
   projects: {
     eyebrow: "05 — Featured work",
-    title:   "A few projects I'm proud of.",
-    lede:    "Selected from recent work. Hover to peek under the hood.",
+    title:   "Products, platforms & the workflows behind them.",
+    lede:    "From building communities and real estate operations to fintech and enterprise tools. Explore the scope, stack, and stage of each project.",
     items: [
+      {
+        kicker: "Property management · Full-stack platform",
+        title:  "BnakHub",
+        desc:   "Multilingual building-management platform for managers, owners, and residents. Built property administration, maintenance requests, announcements, rental listings, expense reporting, and role-scoped financial views across web and Telegram. Includes a permission-aware assistant for building knowledge and reviewed drafts.",
+        url:    "https://bnakhub.online",
+        image:  "assets/proj-bnakhub.png",
+        imageAlt: "BnakHub manager dashboard with building overview, requests, and announcements in a demo environment",
+        badge:  "Demo",
+        tags:   ["React", "TypeScript", "NestJS", "PostgreSQL", "Drizzle", "Telegram", "i18n"],
+        extra:  [{ label: "Role", value: "Full-stack" }, { label: "Languages", value: "hy / en / ru" }, { label: "Stage", value: "Demo" }],
+      },
+      {
+        kicker: "Real estate · Operations & integrations",
+        title:  "MLS",
+        desc:   "Engineering and extending a real estate back office for agencies and brokers. Property and contact management, currency-aware buyer–listing matching, Bitrix24 CRM integrations, and automated Armenian email and Telegram alerts. Production delivery through GitHub Actions with rollback support.",
+        url:    "https://mlsapp.am",
+        image:  "assets/proj-mls.svg",
+        imageAlt: "MLS conceptual cover connecting properties, people, and matching",
+        badge:  "Sign-in required",
+        tags:   ["Laravel", "PHP", "MySQL", "Backpack", "Redis", "Bitrix24", "Telegram", "GitHub Actions"],
+        extra:  [{ label: "Focus", value: "Backend & integrations" }, { label: "Platform", value: "Agency back office" }, { label: "Access", value: "Sign-in required" }],
+      },
+      {
+        kicker: "Real estate · CRM solution design",
+        title:  "Real Estate CRM",
+        desc:   "Discovery and workflow design for a Bitrix24-based real estate CRM. Defined customer and lead records, pre-sales and reservation-to-sale processes, property inventory imports, broker and administrator permissions, and a telephony pilot for linking recorded calls to inquiries. Prepared the implementation baseline and phased rollout plan.",
+        url:    null,
+        image:  "assets/proj-crm.svg",
+        imageAlt: "Conceptual Bitrix24 CRM workflow from inquiry through reservation to sale",
+        badge:  "Discovery & planning",
+        tags:   ["Bitrix24", "CRM", "Workflow Design", "Telephony", "Data Migration"],
+        extra:  [{ label: "Role", value: "Solution design" }, { label: "Project", value: "AlexR" }, { label: "Stage", value: "Discovery & planning" }],
+      },
       {
         kicker: "Fintech / Full-stack SaaS",
         title:  "DetoxMyDebt",

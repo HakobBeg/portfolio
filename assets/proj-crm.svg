@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title description">
+  <title id="title">Real Estate CRM — Bitrix24 solution design</title>
+  <desc id="description">Conceptual project cover showing a connected inquiry, reservation, and sale workflow.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#131f34"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="1" cy="0" r="1">
+      <stop stop-color="#06b6d4" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#background)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <rect x="52" y="96" width="5" height="104" rx="2.5" fill="#22d3ee"/>
+    <text x="78" y="147" font-size="46" font-weight="700" letter-spacing="-1.5" fill="#f8fafc">Real Estate CRM</text>
+    <text x="80" y="189" font-size="25" fill="#94a3b8">Bitrix24 · Solution design</text>
+    <path d="M255 302H545" stroke="#22d3ee" stroke-opacity=".5" stroke-width="2"/>
+    <g fill="#111d30" stroke="#2c4057" stroke-width="1.5">
+      <rect x="52" y="224" width="210" height="156" rx="18"/>
+      <rect x="295" y="224" width="210" height="156" rx="18"/>
+      <rect x="538" y="224" width="210" height="156" rx="18"/>
+    </g>
+    <g fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="157" cy="269" r="10"/>
+      <path d="M139 300v-3a18 18 0 0 1 36 0v3"/>
+      <rect x="384" y="257" width="32" height="40" rx="5"/>
+      <path d="M393 256v-5h14v5M393 271h14M393 281h9"/>
+      <circle cx="643" cy="278" r="20"/>
+      <path d="m634 278 6 6 12-13"/>
+    </g>
+    <g fill="#f8fafc" font-size="26" font-weight="600" text-anchor="middle">
+      <text x="157" y="343">Inquiry</text>
+      <text x="400" y="343">Reservation</text>
+      <text x="643" y="343">Sale</text>
+    </g>
+    <path d="M52 421H748" stroke="#94a3b8" stroke-opacity=".15"/>
+    <text x="52" y="458" fill="#94a3b8" font-size="18" letter-spacing="1.6">CUSTOMERS · INVENTORY · CALL WORKFLOWS</text>
+  </g>
+</svg>
