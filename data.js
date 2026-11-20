@@ -8,7 +8,7 @@ window.PORTFOLIO_DATA = {
     initial:      "H",
     domain:       "hakobbeglaryan",
     domainTld:    ".dev",
-    pageTitle:    "Hakob Beglaryan — Senior Angular Engineer",
+    pageTitle:    "Hakob Beglaryan — Senior Software Engineer",
     email:        "hakobbeg@gmail.com",
     copyright:    "© 2026 Hakob. Crafted with care in Yerevan.",
     availability: "Open to senior & lead roles · Remote · 2026",
@@ -21,11 +21,11 @@ window.PORTFOLIO_DATA = {
   },
 
   hero: {
-    titleGrad: "Senior frontend engineer",
-    titleRest: "building scalable, enterprise-grade&nbsp;web&nbsp;platforms.",
-    intro: "Hi, I'm <strong>Hakob</strong> — a senior frontend engineer with 7+ years building Angular platforms at <strong>T-Bank</strong> and <strong>Warner Music Group</strong>. My work also spans full-stack products like <strong>BnakHub</strong>, backend integrations for <strong>MLS</strong>, and real estate CRM solution design.",
+    titleGrad: "Senior software engineer",
+    titleRest: "building reliable products, platforms &amp;&nbsp;integrations.",
+    intro: "Hi, I'm <strong>Hakob</strong> — a senior software engineer with 7+ years delivering web products at <strong>T-Bank</strong> and <strong>Warner Music Group</strong>. I work across interfaces, APIs, databases, and integrations — from full-stack platforms like <strong>BnakHub</strong> to <strong>MLS</strong> automation and real estate CRM solution design.",
     highlights: [
-      { value: "7+ yrs",       label: "Angular"             },
+      { value: "7+ yrs",       label: "software engineering" },
       { value: "12M+",         label: "users served"        },
       { value: "Yerevan, AM",  label: "· remote-first"      },
     ],
@@ -37,10 +37,10 @@ window.PORTFOLIO_DATA = {
         { n:  1, parts: [{ c:"key",t:"import" },{ t:" { " },{ c:"fn",t:"Engineer" },{ t:" } " },{ c:"key",t:"from" },{ t:" " },{ c:"str",t:"'@hakob/core'" },{ t:";" }] },
         { n:  2, parts: [] },
         { n:  3, parts: [{ c:"key",t:"export const" },{ t:" " },{ c:"fn",t:"hakob" },{ t:": " },{ c:"fn",t:"Engineer" },{ t:" = {" }] },
-        { n:  4, parts: [{ t:"  " },{ c:"prop",t:"role" },{ t:": " },{ c:"str",t:"'Senior Angular Engineer'" },{ t:"," }] },
+        { n:  4, parts: [{ t:"  " },{ c:"prop",t:"role" },{ t:": " },{ c:"str",t:"'Senior Software Engineer'" },{ t:"," }] },
         { n:  5, parts: [{ t:"  " },{ c:"prop",t:"years" },{ t:": " },{ c:"num",t:"7" },{ t:"," }] },
-        { n:  6, parts: [{ t:"  " },{ c:"prop",t:"stack" },{ t:": [" },{ c:"str",t:"'Angular'" },{ t:", " },{ c:"str",t:"'TypeScript'" },{ t:", " },{ c:"str",t:"'RxJS'" },{ t:"]," }] },
-        { n:  7, parts: [{ t:"  " },{ c:"prop",t:"focus" },{ t:": " },{ c:"str",t:"'design systems · MFEs · DX'" },{ t:"," }] },
+        { n:  6, parts: [{ t:"  " },{ c:"prop",t:"stack" },{ t:": [" },{ c:"str",t:"'TypeScript'" },{ t:", " },{ c:"str",t:"'Node.js'" },{ t:", " },{ c:"str",t:"'PostgreSQL'" },{ t:"]," }] },
+        { n:  7, parts: [{ t:"  " },{ c:"prop",t:"focus" },{ t:": " },{ c:"str",t:"'products · APIs · integrations'" },{ t:"," }] },
         { n:  8, parts: [{ t:"  " },{ c:"prop",t:"currentlyOpenTo" },{ t:": " },{ c:"key",t:"true" },{ t:"," }] },
         { n:  9, parts: [{ t:"};" }] },
         { n: 10, parts: [] },
@@ -54,13 +54,13 @@ window.PORTFOLIO_DATA = {
     title:   "Calm, precise software engineering with an eye for craft.",
     portrait: "assets/portrait.jpg",
     paragraphs: [
-      "I specialize in <strong>large-scale Angular architecture</strong> — platforms with hundreds of components, complex real-time state, and demanding performance budgets shared across dozens of engineering teams. My strength sits at the intersection of architecture, type-safety, and developer experience.",
-      "At <strong>T-Bank</strong> and <strong>Warner Music Group</strong> I've led microfrontend rollouts, designed component libraries adopted by 50+ engineers, and tuned RxJS pipelines delivering live data to millions of concurrent users — while maintaining 99.9% uptime.",
-      "I also work across the full product stack. <strong>BnakHub</strong> connects building managers and residents through multilingual web and Telegram experiences. On <strong>MLS</strong>, I extend real estate operations with property matching, CRM integrations, and automated notifications. My <strong>Bitrix24 CRM</strong> work covers discovery and solution design, translating sales processes into workflows, data models, and a phased implementation plan.",
+      "I build <strong>software from interface to infrastructure</strong> — web applications, APIs, data workflows, and integrations that solve practical business problems. My work combines system architecture, type safety, performance, and developer experience, from complex enterprise applications to full-stack products.",
+      "At <strong>T-Bank</strong> and <strong>Warner Music Group</strong> I've led microfrontend rollouts, designed component libraries adopted by 50+ engineers, and tuned real-time data flows serving millions of concurrent users — while maintaining 99.9% uptime.",
+      "My product work spans the full stack. <strong>BnakHub</strong> connects building managers and residents through multilingual web and Telegram experiences. On <strong>MLS</strong>, I extend real estate operations with property matching, CRM integrations, and automated notifications. My <strong>Bitrix24 CRM</strong> work covers discovery and solution design, translating sales processes into workflows, data models, and a phased implementation plan.",
       "Beyond the code, I care deeply about <strong>craft</strong> — interfaces that feel obvious because every detail was deliberate, and motion you only notice when it's missing.",
     ],
     stats: [
-      { value: "7+",    label: "Years building Angular at scale"      },
+      { value: "7+",    label: "Years building software"              },
       { value: "12M+",  label: "Monthly active users served"          },
       { value: "99.9%", label: "Uptime on shipped systems"            },
       { value: "50+",   label: "Engineers using libraries I authored" },
@@ -69,8 +69,8 @@ window.PORTFOLIO_DATA = {
 
   skills: {
     eyebrow: "02 — Toolkit",
-    title:   "A focused stack, sharpened over years.",
-    lede:    "I go deep before I go wide. These are the tools I reach for daily, and the ones I've built production systems around.",
+    title:   "Tools for the full product lifecycle.",
+    lede:    "Languages, frameworks, databases, and delivery tools I use to build user interfaces, backend services, and connected systems.",
     items: [
       { name: "Angular 21",     category: "Framework",    level: 97, desc: "Signals, standalone components, route-level code-splitting, SSR with Hydration. Tracking every major release up to v21." },
       { name: "RxJS",           category: "Reactivity",   level: 93, desc: "Higher-order observables, custom operators, real-time data pipelines at production scale." },
@@ -93,20 +93,20 @@ window.PORTFOLIO_DATA = {
 
   experience: {
     eyebrow: "03 — Experience",
-    title:   "7+ years. Enterprise fintech, global media, product startups.",
+    title:   "7+ years building software for fintech, global media & product teams.",
     items: [
       {
         role:    "Senior Software Engineer",
         company: "T-Bank (formerly Tinkoff)",
         period:  "Nov 2023 — Present",
-        desc:    "Leading frontend architecture on T-Bank's enterprise Nx monorepo — one of the largest fintech frontend codebases in the region. Own reusable product libraries adopted across 10+ teams, drove CI/CD optimisation that significantly reduced build times, and built end-to-end testing infrastructure from scratch. Core contributor to the Procedure Builder platform, a low-code workflow engine now used by hundreds of internal teams.",
+        desc:    "Leading architecture and delivery of web applications within T-Bank's enterprise Nx monorepo. Own reusable product libraries adopted across 10+ teams, drove CI/CD optimisation that significantly reduced build times, and built end-to-end testing infrastructure from scratch. Core contributor to the Procedure Builder platform, a low-code workflow engine now used by hundreds of internal teams.",
         tags:    ["Angular", "TypeScript", "RxJS", "NgRx", "Nx", "Jenkins", "GitLab CI", "Jest", "Cypress"],
       },
       {
-        role:    "Frontend Software Engineer",
+        role:    "Software Engineer",
         company: "Warner Music Group",
         period:  "Oct 2022 — Oct 2023 · New York (remote)",
-        desc:    "Owned performance engineering on Angular applications across Warner's high-traffic digital platforms. Implemented lazy loading and AOT compilation strategies that measurably cut initial load times, reduced memory footprint via NgRx state restructuring, and delivered a reusable component system that accelerated feature delivery across teams serving millions of music fans globally.",
+        desc:    "Owned performance engineering for web applications across Warner's high-traffic digital platforms. Improved application loading and compilation, reduced memory usage through state-management restructuring, and delivered reusable components that accelerated feature delivery across teams serving millions of music fans globally.",
         tags:    ["Angular", "TypeScript", "RxJS", "NgRx", "SCSS", "Cypress", "Jest"],
       },
       {
@@ -117,7 +117,7 @@ window.PORTFOLIO_DATA = {
         tags:    ["Angular", "TypeScript", "Flutter", "Dart", "RxJS", "Akita", "Microservices", "REST"],
       },
       {
-        role:    "Frontend Lecturer",
+        role:    "Software Engineering Lecturer",
         company: "Synergy Academy",
         period:  "2021 — 2023 · Part-time",
         desc:    "Designed and delivered Angular and JavaScript curriculum for cohorts of 20–40 students — from fundamentals through production-grade architecture. Built practical assignment frameworks rooted in real engineering problems. Strong track record of graduates transitioning directly into software engineering roles.",
@@ -192,7 +192,7 @@ window.PORTFOLIO_DATA = {
       {
         kicker: "Real estate · Full-stack Platform",
         title:  "AAREA",
-        desc:   "Full-stack multilingual real estate platform (hy / en / ru) covering listings, auctions, CMS, member directory, news, courses, and bookings. Angular frontend backed by a NestJS REST API with JWT auth, role-based access control, Prisma ORM, and PostgreSQL.",
+        desc:   "Full-stack multilingual real estate platform (hy / en / ru) covering listings, auctions, CMS, member directory, news, courses, and bookings. Built the web application and NestJS REST API with JWT authentication, role-based access control, Prisma ORM, and PostgreSQL.",
         url:    "https://aarea.am",
         image:  "assets/proj-aarea.png",
         tags:   ["Angular", "NestJS", "PostgreSQL", "Prisma", "TypeScript", "JWT", "i18n"],
@@ -214,7 +214,7 @@ window.PORTFOLIO_DATA = {
   contact: {
     eyebrow:     "06 — Contact",
     title:       "Have a project that deserves real craft?",
-    lede:        "Open to senior and lead frontend roles — contract or full-time, fully remote.",
+    lede:        "Open to senior and lead software engineering roles — contract or full-time, fully remote.",
     cardHeading: "Let's build something exceptional — together.",
   },
 
